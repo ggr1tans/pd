@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Rīgas Valsts 1. ģimnāzija.</h2>
+</header>
+
+<section>
+    
+   <div id="cover">
+     <nav>
+      Satura rādītājs
+      <ul style="background-image: url('images/skola.jpg');">
+      <li><a href="#Vesture">Vēsture</a></li>
+      <li><a href="#Nosaukumi">Skolas nosaukumu maiņas</a></li>
+      <li><a href="#Vaditaji">Zināmie skolas vadītāji (1229—1804)</a></li>
+      <li><a href="#Absolventi">Skolas absolventi</a></li>
+       </ul>
+     </nav>
+    </div>
+  
+  <article>
+      <div id="Vesture">
+          Vēsture. 
+            Rīgas Valsts 1. ģimnāzija (saīsinājumā RV1Ģ vai RV1.ģ) ir vispārējās pamata un vidējās izglītības iestāde Rīgā. Tā ir pilsētas senākā skola. Ģimnāzija specializējas matemātikas un valodu padziļinātā apgūšanā. Mācības šajā skolā notiek latviešu valodā. Kopš 1996. gada ģimnāzija piedalās Starptautiskā bakalaurāta mācību programmas realizācijas projektā. Skolai kā pirmajai Latvijā dibināta absolventu un draugu biedrība ar mērķi finansiāli atbalstīt skolu. Lai iegūtu vietu skolā, ir jāiztur matemātikas konkurss, kurā uz vienu vietu pretendē vairāki skolēni. 9. klases noslēgumā skolēniem jāiztur vēl viens matemātikas konkurss, lai saglabātu vietu skolā. 2019. gadā konkursam uz 10. klasi pieteicās vairāk nekā tūkstoš Latvijas 9. klašu skolēnu.
+            Skolas pastāvēšanai iespējams izsekot līdz pat 1211. gadam, kad bīskaps Alberts Rīgā nodibināja Svētās Marijas katedrāli un pie tās — Livonijas bīskapijas domkapitula klosteri. Skola atradās Doma baznīcas krustejā un bija paredzēta katoļu garīdznieku sagatavošanai. Zviedru laikā ar Zviedrijas karaļa Gustava II Ādolfa lēmumu 1631. gadā uz Doma skolas bāzes izveidoja Rīgas Akadēmisko ģimnāziju. 1804. gadā izglītības reformu laikā Domskolu pārveidoja par Rīgas apriņķa galveno mācību iestādi — Rīgas 1. apriņķa skolu, 1861. gadā — par Rīgas reālģimnāziju, kurā mācījās arī Vilhelms Ostvalds (1864—1871), bet 1873. gadā — par Rīgas Pilsētas ģimnāziju. 1874. gadā pēc Rīgas galvenā arhitekta Johana Daniela Felsko projekta tika uzcelta tagadējā skolas ēka Raiņa bulvārī 8. Vecā skolas ēka pie Doma baznīcas tika nojaukta 1888. gadā, būvējot pilsētas muzeju. Rusifikācijas periodā 1894. gadā skolu pārveidoja par klasisko ģimnāziju, vēlāk — par valsts ģimnāziju (Государственная гимназия) ar krievu mācību valodu. 1919. gadā Stučkas valdība pārdēvēja to par Rīgas 1. vidusskolu ar latviešu mācību valodu, Latvijas Republikas laikā tika atjaunota Rīgas pilsētas 1. ģimnāzija. Pēc Latvijas okupācijas skolu atkal pārdēvēja par Rīgas 1. vidusskolu un 1944. gadā nosauca tās pirmā direktora Leona Paegles vārdā. Pēc Latvijas Republikas atjaunošanas skola atguva Rīgas 1. ģimnāzijas vārdu, bet kopš 1996. gada tiek dēvēta par Rīgas Valsts 1. ģimnāziju. Meklējot datus par skolas vēsturi, jāņem vērā, ka laika posmā, kad skolu sauca par Rīgas pilsētas 1. ģimnāziju, pastāvēja arī Rīgas Valsts 1. ģimnāzija, kas nav saistīta ar šajā rakstā minēto skolu.
+
+      </div>
+      <div id="Nosaukumi">
+          Skolas nosaukumu maiņas.
+            Pēc Latvijas Valsts arhīva datiem, Rīgas Valsts 1. ģimnāzija piedzīvojusi vismaz 15 dažādus 
+          <ul>
+             <li>1211.—1528. — Domkapitula klostera skola</li>
+             <li>1528.—1631. — Rīgas pilsētas Domskola</li>
+             <li>1631.—1710. — Rīgas Akadēmiskā ģimnāzija</li>
+             <li>1711.—1804. — Rīgas Domskola (klasiskā ģimnāzija)</li>
+             <li>1804.—1860. — Rīgas 1. apriņķa skola</li>
+             <li>1861.—1873. — Rīgas Reālģimnāzija</li>
+             <li>1873.—1894. — Rīgas Pilsētas ģimnāzija ar reālskolas un ģimnāzijas klasēm</li>
+             <li>1894.—1895. — 8 klašu klasiskā ģimnāzija</li>
+             <li>1896.—1919. — Valsts ģimnāzija</li>
+             <li>1919.—1920. — 1. vidusskola</li>
+             <li>1920.—1940. — Rīgas pilsētas 1. ģimnāzija</li>
+             <li>1940.—1944. — Rīgas 1. vidusskola</li>
+             <li>1944.—1990. — Ar Darba Sarkanā Karoga ordeni apbalvotā Rīgas L. Paegles 1. vidusskola</li>
+             <li>1990.—1996. — Rīgas 1. ģimnāzija</li>
+             <li>1996.—pašlaik — Rīgas Valsts 1. ģimnāzija</li>
+           </ul>
+    </div>
+    <div id="Vaditaji">
+        <table>
+            <tr>
+              <th>Gads </th>
+              <th>Vadītājs</th>
+              </tr>
+            <tr>
+                <td>ap 1239. </td>
+                <td>mācību pārzinis (scholasticus) Domkapitula kanoniķis Heinrihs</td>
+             </tr>
+             <tr>
+                <td>1528.—1538. </td>
+                <td>rektors Jakobs Batuss (Jacobus Battus, miris 1546)</td>
+             </tr>
+             <tr>
+                <td>no 1538</td>
+                <td>rektors Retgers Pistorijs (Bekers)</td>
+             </tr>
+             <tr>
+                <td>1554.—1561. </td>
+                <td> rektors Hermanis Vilkens (Vilikinds, Vitekinds)</td>
+             </tr>
+             <tr>
+                <td>ap 1576. </td>
+                <td>rektors Georgs Marsovs</td>
+             </tr>
+             <tr>
+                <td>1579.—1589. </td>
+                <td>rektors Georgs Marsovs</td>
+             </tr>
+             <tr>
+                <td>1579.—1589. </td>
+                <td>rektors Heinrihs Mellers</td>
+             </tr>
+             <tr>
+                <td>1589.—1596. </td>
+                <td>rektors un inspektors Johans Rīvijs</td>
+             </tr>
+             <tr>
+                <td>no 1631</td>
+                <td>ģimnāzijas inspektors Hermanis Samsons</td>
+             </tr>
+             <tr>
+                <td>no 1669. </td>
+                <td>rektors Georgs Lauterbahs</td>
+             </tr>
+             <tr>
+                <td>no 1681</td>
+                <td>rektors Mihaels Pinsderfers (Pinsdörffer)</td>
+             </tr>
+             <tr>
+                <td>1755.—1765. </td>
+                <td>rektors un inspektors Johans Gothelfs Lindners</td>
+             </tr>
+             <tr>
+                <td>1765.—1780. </td>
+                <td>rektors Gotlībs Šlēgels</td>
+             </tr>
+             <tr>
+                <td>1780.—1787</td>
+                <td>rektors Karls Filips Mihaels Snells</td>
+             </tr>
+             <tr>
+                <td>no 1788. </td>
+                <td>rektors Kārlis Gotlobs Zontāgs</td>
+             </tr>
+             <tr>
+                <td>līdz 1804. </td>
+                <td>rektors Johans Augusts Albanuss</td>
+             </tr>
+        </table>
+    </div>
+    <div id="Absolventi">
+        Skolas absolventi.
+        Tomass Dukurs, Valters Frīdenbergs, Toms Skujiņš, Daina Taimiņa
+        
+        <h2>Raiņa biogrāfija</h2>
+        
+        <p>
+            Rainis (īstajā vārdā Jānis Pliekšāns) ir dzimis 1865. gada 11. septembrī Dunavas pagasta Varslavānos muižu nomnieka ģimenē. Savu bērnību Rainis ir pavadījis tēva nomātajās pusmuižās Tadenavā, Randenē, Berķenelē (Berkenhēgenā), Vasiļovā, Jasmuižā.
+        </p>
+        <p>
+           8 – 9 gadu vecumā Rainis mācījās pansijā pie Vilkumiesta jeb Ēģiptes mācītāja O. Svensona. Savukārt laika posmā no 1875.gada augusta līdz 1879.gada decembra viņš mācījās Grīvas vācu skolā. 1880.gada janvārī viņš iestājās Rīgas pilsētas (vācu) ģimnāzijas klasikas nodaļā. Skolas laikā Rainis apguva latīņu un sengrieķu valodas, daudz lasīja pasaules literatūras klasiku, sāka vākt latviešu folkloru un sacerēja dzejoļus. 
+        </p>
+         <p>
+            1884. gada augustā Rainis iestājās Pēterburgas universitātes Juridiskajā fakultātē. Studiju laikā viņš interesējās arī par filoloģiju un vēsturi. 1888.gada maijā Rainis saņēma apliecību par universitātes beigšanu.
+
+        </p>
+         <p>
+            1889.gada februārī Rainis sāka strādāt Viļņas apgabaltiesā par tiesneša amata kandidātu un sekretāru. No 1889.gada janvāra līdz septembrim Rainis bija advokāta A. Stērstes palīgs Jelgavā.
+        </p>
+         <p>
+            Sākot ar 1891.gada septembri Rainis strādāja laikrakstā „Dienas Lapa”, no tā paša gada 17.decembra bija tā redaktors. Rainis ir sacerējis laikrakstam ap 400 ievadrakstu – tie publicēti bez paraksta un ir identificēti tikai daļēji. Laikrakstā viņš nostrādāja līdz 1895.gadam, te viņš arī iepazinās ar dzejnieci Aspaziju.
+
+        </p>
+         <p>
+            Pēc aiziešanas no laikraksta „Dienas Lapa” Rainis pārcēlās uz Jelgavu un strādāja notāra kantorī. 1896. un 1897. gadu miju Rainis pavadīja Berlīnē. 1897.gada martā viņš sāka strādāt par advokātu Paņevežā. Šī paša gada 31.maijā Raini apcietināja un ieslodzīja Paņevežas cietumā, vēlāk viņu pārsūtīja uz Liepājas, pēc tam Rīgas cietumu, apsūdzot par piederību pretvalstiskai slepenai organizācijai, kas tika nodēvēta par Jauno strāvu. Cietumā Rainis tulkoja J.V. Gētes „Faustu”, un, veicot šo darbu, viņš bagātināja latviešu valodas leksikas krājumu un darināja jaunas vārdu formas.
+        </p>
+         <p>
+            1897.gada decembrī Rainis salaulājās ar Aspaziju un pēc tam kopā ar viņu devās uz pagaidu nometinājuma vietu Pleskavā. 1899.gada aprīlī tiesa piesprieda Rainim izsūtījumu uz Vjatkas guberņu, Slobodskas pilsētu, kur ieradās tā paša gada jūnijā.
+        </p>
+         <p>
+            1903. gada 1.maijā Rainis saņēma atļauju atgriezties dzimtenē. Pēc atgriešanās viņš dzīvoja Jelgavā, Jūrmalā, Rīgā, no 1904. gada – Jaundubultos. Rainis iesaistījās Piektā gada revolūcijā: viņš teica runas revolucionārās sanāksmēs, piedalījās Latvijas skolotāju kongresā. Revolūcijā Rainis saskatīja latviešu tautas cīņu par atbrīvošanos no krievu carisma un valstiskās patstāvības veidošanās sākumu.
+
+        </p>
+         <p>
+            1905.gada decembrī Rainis un Aspazija emigrēja uz Šveici. Sākumā viņi dzīvoja Cīrihē, bet 1906.gada martā apmetās Kastanjolas ciematā (tagadējā Lugano pilsētā) pie Lugāno ezera. Šveicē Rainis uzturējās ar vārdu Arturs Nagliņš.
+
+        </p>
+         <p>
+            1920. gada aprīlī Rainis un Aspazija, tūkstošiem cilvēku sveikti, atgriezās Latvijā. Kā sociāldemokrātu kandidāts Rainis tika ievēlēts Satversmes sapulcē (1920) un Latvijas Saeimā (1922, 1925, 1926). Rainis bija Dailes teātra līdzdibinātājs (1920) un pirmais direktors (līdz 1921). No 1921.gada līdz 1925. gadam viņš bija Nacionālā teātra direktors.
+        </p>
+         <p>
+            Laika posmā no 1926.gada decembra līdz 1928.gada janvārim Rainis bija izglītības ministrs. Dienesta pienākumus veicot, viņš apbraukāja daudzas Latvijas skolas. No 1920. gada Rainis bija arī LU goda biedrs.
+        </p>
+         <p>
+            Rainis bieži devās ārzemju ceļojumos. Viņš ilgojās pēc sirdij mīļās Kastanjolas, ko apciemoja 1921., 1926. un 1927. gadā. Savos ceļojumos Rainis apmeklēja Franciju, Itāliju, Austriju, Vāciju, Beļģiju, Poliju, Baltkrievijas PSR, Norvēģiju, Zviedriju, Ēģipti un Palestīnu.
+        </p>
+         <p>
+            1929. gada 12. septembrī Rainis savā vasarnīcā mira. Viņu apbedīja 15.septembrī Rīgas jaunajos kapos, kas vēlāk nosaukti Raiņa vārdā.
+        </p>
+        
+        
+        <p>
+           Informācijas avots: https://www.uzdevumi.lv/p/latviesu-literatura/10-12-klase/rainis-janis-plieksans-5485/re-13ab2950-0396-487f-8e63-b53752d53ef0
+        </p>
+    </div>
+      
+  </article>
+</section>
+
+<footer>
+  <a href="https://www.r1g.edu.lv/">
+    <img src="images/logo.png" alt="Clickable Image">
+</a>
+</footer>
+
+</body>
+</html>
+
